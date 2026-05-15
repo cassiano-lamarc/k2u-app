@@ -1,0 +1,7 @@
+{
+  "routes": {
+    "/k2u-app": {},
+    "/k2u-app/auth": {},
+    "/k2u-app/auth/login": {}
+  }
+}
