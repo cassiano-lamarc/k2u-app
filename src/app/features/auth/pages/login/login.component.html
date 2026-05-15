@@ -1,58 +1,123 @@
 <div class="login">
 
-    <!-- BANNER -->
+    <!-- HERO -->
 
-    <section class="login__banner">
+    <section class="login__hero">
 
         <div class="login__overlay"></div>
 
-        <div class="login__banner-content">
+        <div class="login__hero-content">
 
-            <span class="login__logo">
-                Care to YOU
+            <!-- LOGO -->
+
+            <div class="login__brand">
+
+                <img src="logo-k2u.png" alt="Care To You Logo" />
+            </div>
+
+            <!-- TEXT -->
+
+            <div class="login__hero-text">
+
+                <h1>
+                    Beleza e cuidado
+                    onde você estiver.
+                </h1>
+
+                <p>
+                    Profissionais qualificados prontos para
+                    te atender no conforto da sua casa.
+                </p>
+
+            </div>
+
+            <!-- FEATURES -->
+
+            <div class="login__features">
+
+                <div class="feature">
+
+                    <div class="feature__icon">
+                        <i class="pi pi-shield"></i>
+                    </div>
+
+                    <div class="feature__content">
+                        <strong>Profissionais</strong>
+                        <span>Verificados</span>
+                    </div>
+
+                </div>
+
+                <div class="feature">
+
+                    <div class="feature__icon">
+                        <i class="pi pi-calendar"></i>
+                    </div>
+
+                    <div class="feature__content">
+                        <strong>Agendamento</strong>
+                        <span>Fácil e Rápido</span>
+                    </div>
+
+                </div>
+
+                <div class="feature">
+
+                    <div class="feature__icon">
+                        <i class="pi pi-star"></i>
+                    </div>
+
+                    <div class="feature__content">
+                        <strong>Avaliações</strong>
+                        <span>Confiáveis</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FOOTER -->
+
+            <span class="login__copyright">
+                © 2026 Care To You. Todos os direitos reservados.
             </span>
-
-            <h1>
-                Beleza e cuidado
-                no conforto da sua casa.
-            </h1>
-
-            <p>
-                Agende profissionais qualificados
-                para atendimento residencial.
-            </p>
 
         </div>
 
     </section>
 
-    <!-- FORM -->
+    <!-- CONTENT -->
 
     <section class="login__content">
 
         <div class="login__card">
 
-            <span class="login__mobile-logo">
-                K2U
-            </span>
+            <!-- LOGO -->
+
+            <div class="login__card-logo">
+
+                <img src="favico.png" alt="Care To You Logo" />
+
+            </div>
+
+            <!-- TITLE -->
 
             <h2>
-                Bem-vindo
+                Bem-vindo!
             </h2>
 
             <p class="login__subtitle">
-                Entre rapidamente na plataforma
+                Entre na sua conta para continuar
             </p>
 
             <!-- SOCIAL -->
 
             <div class="login__socials">
 
-                <button pButton type="button" severity="secondary" outlined="true" class="social-button"
-                    (click)="loginGoogle()">
+                <button pButton type="button" severity="secondary" outlined="true" class="social-button">
 
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
-                        alt="google" />
+                        alt="Google" />
 
                     <span>
                         Continuar com Google
@@ -60,8 +125,7 @@
 
                 </button>
 
-                <button pButton type="button" severity="secondary" outlined="true" class="social-button"
-                    (click)="loginApple()">
+                <button pButton type="button" severity="secondary" outlined="true" class="social-button">
 
                     <i class="pi pi-apple"></i>
 
@@ -77,25 +141,35 @@
 
             <div class="login__divider">
 
-                <p-divider></p-divider>
+                <div class="line"></div>
 
                 <span>ou</span>
 
-                <p-divider></p-divider>
+                <div class="line"></div>
 
             </div>
 
             <!-- FORM -->
 
-            <form [formGroup]="form">
+            <form [formGroup]="form" class="login__form">
+
+                <!-- EMAIL -->
 
                 <div class="field">
 
                     <label>Email</label>
 
-                    <input pInputText type="email" formControlName="email" placeholder="Digite seu email" />
+                    <span class="p-input-icon-left">
+
+                        <i class="pi pi-envelope"></i>
+
+                        <input pInputText type="email" formControlName="email" placeholder="Digite seu email" />
+
+                    </span>
 
                 </div>
+
+                <!-- PASSWORD -->
 
                 <div class="field">
 
@@ -107,7 +181,29 @@
 
                 </div>
 
-                <button pButton type="button" class="login__submit" (click)="login()">
+                <!-- OPTIONS -->
+
+                <div class="login__options">
+
+                    <div class="remember">
+
+                        <p-checkbox binary="true"></p-checkbox>
+
+                        <span>
+                            Lembrar-me
+                        </span>
+
+                    </div>
+
+                    <a href="">
+                        Esqueci minha senha
+                    </a>
+
+                </div>
+
+                <!-- SUBMIT -->
+
+                <button pButton type="submit" class="login__submit">
 
                     Entrar
 
@@ -115,16 +211,16 @@
 
             </form>
 
+            <!-- FOOTER -->
+
             <div class="login__footer">
+
+                <span>
+                    Ainda não tem uma conta?
+                </span>
 
                 <a href="">
                     Criar conta
-                </a>
-
-                <span>•</span>
-
-                <a href="">
-                    Esqueci minha senha
                 </a>
 
             </div>
