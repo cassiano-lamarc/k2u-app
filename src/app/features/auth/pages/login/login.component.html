@@ -1,0 +1,136 @@
+<div class="login">
+
+    <!-- BANNER -->
+
+    <section class="login__banner">
+
+        <div class="login__overlay"></div>
+
+        <div class="login__banner-content">
+
+            <span class="login__logo">
+                Care to YOU
+            </span>
+
+            <h1>
+                Beleza e cuidado
+                no conforto da sua casa.
+            </h1>
+
+            <p>
+                Agende profissionais qualificados
+                para atendimento residencial.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FORM -->
+
+    <section class="login__content">
+
+        <div class="login__card">
+
+            <span class="login__mobile-logo">
+                K2U
+            </span>
+
+            <h2>
+                Bem-vindo
+            </h2>
+
+            <p class="login__subtitle">
+                Entre rapidamente na plataforma
+            </p>
+
+            <!-- SOCIAL -->
+
+            <div class="login__socials">
+
+                <button pButton type="button" severity="secondary" outlined="true" class="social-button"
+                    (click)="loginGoogle()">
+
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                        alt="google" />
+
+                    <span>
+                        Continuar com Google
+                    </span>
+
+                </button>
+
+                <button pButton type="button" severity="secondary" outlined="true" class="social-button"
+                    (click)="loginApple()">
+
+                    <i class="pi pi-apple"></i>
+
+                    <span>
+                        Continuar com Apple
+                    </span>
+
+                </button>
+
+            </div>
+
+            <!-- DIVIDER -->
+
+            <div class="login__divider">
+
+                <p-divider></p-divider>
+
+                <span>ou</span>
+
+                <p-divider></p-divider>
+
+            </div>
+
+            <!-- FORM -->
+
+            <form [formGroup]="form">
+
+                <div class="field">
+
+                    <label>Email</label>
+
+                    <input pInputText type="email" formControlName="email" placeholder="Digite seu email" />
+
+                </div>
+
+                <div class="field">
+
+                    <label>Senha</label>
+
+                    <p-password formControlName="password" [feedback]="false" [toggleMask]="true"
+                        placeholder="Digite sua senha">
+                    </p-password>
+
+                </div>
+
+                <button pButton type="button" class="login__submit" (click)="login()">
+
+                    Entrar
+
+                </button>
+
+            </form>
+
+            <div class="login__footer">
+
+                <a href="">
+                    Criar conta
+                </a>
+
+                <span>•</span>
+
+                <a href="">
+                    Esqueci minha senha
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
